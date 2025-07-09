@@ -22,7 +22,7 @@ class Kernel extends ConsoleKernel
 
         // Check for bot mentions every 30 seconds
         $schedule->command('chatwork:check-mentions')
-                 ->everyThirtySeconds();
+                 ->everyMinute();
     }
 
     /**
